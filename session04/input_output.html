@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="date1">Hôm nay là thứ 4</p>
+<p id="date2">Hôm nay là thứ 4</p>
+Nhập số: <input id="result" type="text" onchange="getValue()">
+
+<script>
+  // alert("Hello tui là Alert!!");
+  // confirm("Hello tui là Confirm!!");
+  // let str = prompt("Hello tui là Prompt!!");
+  // document.write("Hello tui là document.write");
+  // document.writeln("Hello tui là document.writeln");
+  // console.log("Hello tui là console.log");
+  // document.getElementById("date1").innerText = "Hôm nay là thứ <b>5<b/>";
+  // document.getElementById("date2").innerHTML = "Hôm nay là thứ <b>6<b/>";
+  function getValue(){
+    let result = document.getElementById("result").value;
+    document.writeln("Bạn đã nhập số" + result);
+  }
+
+</script>
+</body>
+</html>
