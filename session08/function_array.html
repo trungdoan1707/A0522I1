@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // let cars = ["Toyota", "BMW", "Honda"];
+    //Thêm phần tử vào đầu mảng
+    // cars.unshift("VinFast");
+
+    //Xóa phần tử đầu mảng
+    // cars.shift();
+
+    //Thêm phần tử vào cuối mảng
+    // cars.push("VinFast");
+
+    //Xóa phần tử ở cuối mảng
+    // cars.pop();
+
+    //Nối các phần tử trong mảng thành chuỗi
+    // document.writeln(cars.join("---"));
+
+    //Sắp xếp các phần tử trong mảng
+    // document.writeln(cars.sort().join("--"));
+
+    //Sắp xếp theo số
+    // let numbers = [10, 111, 101, 2, 22, 33, 41, 114];
+    // document.writeln(numbers.sort(function (x, y) {
+    //     return x - y;
+    // }).join("--"))
+
+    //Đảo ngược phần tử trong mảng
+    // document.writeln(cars.reverse().join("--"))
+
+    // for (let e of cars) {
+    //     document.writeln(e);
+    // }
+
+    //Mảng 2 chiều
+    let cities = [
+        ["Hà Nội", "Vinh", "Đà Nẵng"],
+        ["Tokyo", "Osaka", "Hirosima"],
+        ["Newyork", "Washington", "cali"]
+    ]
+    for(let city of cities){
+        for (let c of city){
+            document.writeln(c);
+        }
+        document.writeln("<br>");
+    }
+</script>
+</body>
+</html>
