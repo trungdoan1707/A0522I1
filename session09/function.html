@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    //Ví dụ 1: Khai báo 1 hàm in ra từ 1 đến 100
+
+    // function printFrom1To100(){
+    //     for (let i = 1 ; i <=100; i++){
+    //         document.writeln(i.toString() + " ");
+    //     }
+    // }
+    //
+    // printFrom1To100();
+
+    //ví dụ 2: Khai báo 1 hàm nhận vào 2 giá trị và hiển thị tổng của 2 giá trị đó
+    // function sum2(x, y) {
+    //     document.writeln(x + y);
+    // }
+    //
+    // sum2(10, 20);
+
+    //ví dụ 3: Khai báo 1 hàm nhận vào 1 mảng giá trị và trả về tổng của mảng
+    function sumN(x) {
+        let sum = 0;
+        for (let i = 0; i < x.length; i++) {
+            sum += x[i];
+        }
+        return sum;
+    }
+
+    let arr1 = [3,1,5,6,23,3,6,3,6,2,66,22];
+    let arr2 = [31,1,5,1,2,3,6,3,26,21,67,12];
+    let sum1 = sumN(arr1);
+    let sum2 = sumN(arr2);
+    if (sum1 > sum2){
+        document.writeln("Mảng 1 lớn hơn mảng 2");
+    }else if (sum1 === sum2){
+        document.writeln("Mảng 1 bằng mảng 2");
+    }
+    else {
+        document.writeln("Mảng 1 nhỏ hơn mảng 2");
+    }
+
+</script>
+</body>
+</html>
