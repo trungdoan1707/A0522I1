@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Animal{
+        constructor(soChan, mauLong) {
+            this.soChan = soChan;
+            this.mauLong = mauLong;
+        }
+        sound(){
+            document.writeln("Chưa xác định");
+        }
+    }
+
+    class Dog extends Animal{
+        constructor(soChan, mauLong, giongLoai) {
+            super(soChan, mauLong);
+            this.giongLoai = giongLoai;
+        }
+        sound(){
+            document.writeln("Gâu gâu");
+        }
+    }
+
+    class Cat extends Animal{
+        constructor(soChan, mauLong, mauMat) {
+            super(soChan, mauLong);
+            this.mauMat = mauMat;
+        }
+    }
+
+    let animal1 = new Animal(2, "đen");
+    let dog1 = new Dog(4, "trắng", "Husky");
+    let cat1 = new Cat(4, "Đen", "xanh");
+    cat1.sound();
+
+</script>
+</body>
+</html>

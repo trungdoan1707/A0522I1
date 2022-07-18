@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    class Student {
+        constructor(name1, age1, address1, email1, password) {
+            this.name = name1;
+            this.age = age1;
+            this.address = address1;
+            this.email = email1;
+            this._password = password;
+        }
+        getName(){
+            return this.name;
+        }
+        setName(newName){
+            this.name = newName;
+        }
+
+        setPassword(newPassword) {
+            this._password = newPassword;
+        }
+    }
+
+    let studentA = new Student("Nguyễn Văn A", 25, "Đà Nẵng", "nguyenvana@gmail.com", "123");
+    let studentB = new Student("Nguyễn Văn B", 14, "Quãng Nam", "nguyenvanb@gmail.com", "234");
+    let studentC = new Student("Nguyễn Văn C", 44, "Nghệ An", "nguyenvanb@gmail.com", "abc");
+    let students = [studentA, studentB, studentC];
+    studentB.setPassword("hello");
+    for (let student of students) {
+        document.writeln("name: " + student.getName());
+        document.writeln("<br>")
+    }
+</script>
+</body>
+</html>
